@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyMovies</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #ff0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .navbar button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .movie {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .movie img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .movie h1 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .movie p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        .movie .details {
+            margin-top: 15px;
+        }
+        .movie .details p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .footer {
+            background-color: #ff0;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo" style="margin-right: 0;">
+            <a href="#">MyMovies</a>
+        </div>
+        <div class="nav-links">
+            <a href="accuiel.html">accueil</a>
+            <a href="ajout.html">Ajouter</a>
+            <a href="liste.html">La liste</a>
+        </div>
+        <div class="search">
+            <input placeholder="Rechercher" type="text" />
+            <button>Rechercher</button>
+        </div>
+    </div>
+    <div class="content" id="movie-content">
+     
+    </div>
+    <div class="footer">
+        2025 MyMovies Tous droits réservés.
+        <a href="#" style="color: #000;">Mentions légales</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

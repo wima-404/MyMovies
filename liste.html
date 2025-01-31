@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyMovies - La Liste</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #d1c000;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: #000;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+        .navbar a:first-child {
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .movie {
+            margin: 10px;
+        }
+        .movie img {
+            width: 200px;
+            height: 300px;
+            border-radius: 15px;
+        }
+        @media (max-width: 768px) {
+            .movie img {
+                width: 150px;
+                height: 225px;
+            }
+        }
+        @media (max-width: 480px) {
+            .movie img {
+                width: 100px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">MyMovies</a>
+        <a href="accuiel.html">accueil</a>
+        <a href="ajout.html">Ajouter</a>
+        <a href="liste.html">La liste</a>
+    </div>
+    <div class="content" id="movie-content">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
